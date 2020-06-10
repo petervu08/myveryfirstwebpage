@@ -1,0 +1,272 @@
+
+
+/*long hand version 
+body{
+	font-family: Arial, Helvetica, san-serif; 
+	font-size: 15px; 
+	line-height: 1.5; 
+}
+*/ 
+
+/* css for body */ 
+body{
+	font:15px/1.5 Arial, Helvetica, san-serif;
+    padding:0;
+	margin:0;
+	background-color:#f4f4f4; 
+}
+
+/* container is a class so you use the . symbol the # is used for the id*/ 
+/* set it to be responsive so ou set the width in percentage */ 
+/* margin auto moves the body to the middle */ 
+/* overflow hidden will remove the scroll bar and information will be hidden */ 
+/* min-height allows if it is reponsive and the screen is smaller the text grows or the
+   menu goes on the next line you want the height to adjust */ 
+/* By default unordered list have padding */
+/* padding: 0 0 0 0; top right bottom left */ 
+
+/* css for Global */ 
+.container{
+    width: 80%; 
+	margin: auto; 
+	overflow:hidden; 
+}
+
+ul{
+ margin: 0; 
+ padding: 0; 
+}
+
+
+.button_1{
+	
+	height: 38px; 
+	background: #e8491d;
+	border: 0;
+	padding-left: 20px; 
+	padding-right: 20px;  
+	color: #ffffff; 
+}
+
+
+.dark{
+	padding:15px;
+	background: #35424a; 
+	color:#ffffff; 
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+
+
+/* end of css for Global */ 
+
+
+/* css for Header */ 
+header{
+	background:#35424a; 
+	color:#ffffff;
+	padding-top: 30px; 
+	min-height: 70px; 
+	border-bottom: #e8491d 3px solid; 
+}
+
+/* css for Header links */ 
+header a{
+	color: #ffffff; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	font-size: 16px; 
+}
+
+
+/* css for Header list items */
+header li{
+	float:left;
+	display: inline; 
+	padding: 0 20px 0 20px; 
+}
+
+/* css for header branding id */
+
+header #branding{
+	float: left; 
+}
+
+header #branding h1{
+	margin: 0px; 
+}
+
+/* end of css for header branding id */
+
+
+/* css for header nav */
+
+header nav{
+	float:right; 
+	margin-top: 10px; 
+}
+
+/* css for header using class in HTML */
+
+header .highlight, header .current a{
+	color:#e8491d; 
+	font-weight: bold; 
+}
+
+/* css for header nav hover state */
+header a:hover{
+	color:#CCCCCC; 
+	font-weight: bold; 
+}
+
+/* css for Showcase */
+/* min-height allows the image to be responsive not flexible */
+/* 0 is the x-axis and to move vertically -400px */
+#showcase{
+	min-height: 400px; 
+	background: url('../img/showcase.jpg') no-repeat 0 -400px; 
+	text-align: center; 
+	color: #ffffff; 
+}
+
+/* css for Showcase h1 */
+#showcase h1{
+	margin-top: 100px; 
+	font-size: 55px; 
+	margin-bottom: 10px; 
+}
+
+/* css for Showcase p */
+#showcase p{ 
+	font-size: 20px; 
+}
+
+/* css for Newsletter section */
+
+#newsletter{
+	padding: 15px; 
+	color: #ffffff; 
+	background:#35424a; 
+}
+
+/* css for Newsletter h1 */
+#newsletter h1{
+	float: left;
+}
+
+/* css for Newsletter form */
+#newsletter form{
+	float: right; 
+	margin-top: 15px; 
+}
+
+/* css for Newsletter input */
+/* using CSS3 use input[type="email"] */
+#newsletter input[type="email"]{
+	padding: 4px; 
+    height: 25px; 
+    width: 250px; 	
+}
+
+/* css for Boxes section */ 
+#boxes{
+	margin-top: 20px; 
+}
+
+
+/* css for each of the Boxes */ 
+#boxes .box{
+	float: left; 
+	width: 30%; 
+	padding: 10px; 
+	text-align: center; 
+}
+
+/* css for each of the Boxes images */ 
+#boxes .box img{
+	width: 90px; 
+}
+
+/*css for the sidebar */
+aside#sidebar{
+float:right; 
+width:30%;  
+margin-top: 10px; 
+}	
+
+
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%; 
+	padding: 5px; 
+}
+
+/*css for Main-col */
+article#main-col{
+float:left;
+width:65%; 
+}
+
+
+/*css for the Services section */ 
+ul#services li{
+	list-style: none; 
+	padding: 20px; 
+	border: #cccccc solid 1px;
+    margin-bottom: 5px; 
+	background: #e6e6e6; 
+}
+
+
+/*css for the footer */ 
+footer{
+	padding: 20px; 
+	margin-top: 20px; 
+	color: #ffffff; 
+	background-color: #e8491d; 
+	text-align: center; 
+}
+
+/*Media Query to make the site responsive */
+/*Media Query to test use code below */
+/*@media(max-width: 768px){
+	body{
+		display: none; 
+	}
+}
+*/ 
+@media(max-width: 768px){
+	header #branding
+	header nav, 
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float: none; 
+		text-align:center; 
+		width: 100%; 
+}
+
+header{
+	padding-bottom: 20px; 
+}
+
+#showcase h1{
+	margin-top: 40px; 
+}
+
+#newsletter button .quote button{
+	display: block;
+	width: 100%; 
+}
+
+#newsletter form input[type="email"], .quote input, .quote textarea{
+	width: 100%; 
+	margin-bottom:5px; 
+}
+
+
+}
+		
